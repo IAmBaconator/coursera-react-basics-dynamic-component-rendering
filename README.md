@@ -8,3 +8,24 @@ To practice using React’s `useState` hook to manage the logged-in state and co
 # Lab Notes
 Command to create _(this)_ React app, `npx create-react-app toggle_app` and start the browser preview of the app, `npm start`.<br />
 **Note:** The  `create-react-app` command is deprecated.
+## LoginButton Explaination
+* Simple functional component.
+* Receives a login function through a prop and binds it to an onClick event.
+* Clicking the button will trigger a change in the application state.
+## LogoutButton Explaintion
+* Simple functional component.
+* Receives a logout function through a prop and binds it to an onClick event.
+* Clicking the button will trigger a change in the application state.
+## HomePage Explaination
+* Functional component that rendors an `h1` message statically.
+## App Explaination
+### State Management:  
+* The `useState` hook (`const [loggedIn, setLoggedIn] = useState(false)`) is used to define and manage the `loggedIn` state.
+* `loggedIn` is a boolean that determines the current login status.
+### Functions:
+* The login function (`const login = () => setLoggedIn(true);`) sets `loggedIn` to true, and the logout function (`const logout = () => setLoggedIn(false);`) sets it to false.
+### Conditional Rendering:
+* When loggedIn is false, the LoginButton is displayed by calling the LoginButton component(`<LoginButton login={login} />`).
+* When loggedIn is true, the HomePage and LogoutButton are displayed by calling the HomePage (`<HomePage />`) and LogoutButton (`<LogoutButton logout={logout} />`) components.
+### Props Passing:
+* The login and logout functions are passed as props to LoginButton and LogoutButton, respectively.  

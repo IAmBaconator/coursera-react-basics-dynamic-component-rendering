@@ -1,2 +1,10 @@
 # coursera-react-basics-dynamic-component-rendering
 A demo application to demonstrate rendering a component based on the current state of the data when a user logs in or logs out of the app.
+* **State management** in React allows components to track and update dynamic data, such as whether a user is logged in or not.<br/>
+* **Props** passing enables parent components to send data or functions to child components, like passing login and logout functions to buttons.<br />
+* **Conditional rendering** controls what appears on the screen based on the current state, such as showing a login button when logged out or a home page with a logout button when logged in.
+## Goal
+To practice using React’s `useState` hook to manage the logged-in state and conditionally render components based on that state.
+# Lab Notes
+Command to create _(this)_ React app, `npx create-react-app toggle_app` and start the browser preview of the app, `npm start`.<br />
+**Note:** The  `create-react-app` command is deprecated.
